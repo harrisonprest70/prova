@@ -1,0 +1,13 @@
+.. _exhale_function_parse__ubx_8c_1a1ef7988daf0c825dcf15a885a2e6b018:
+
+Function parse_ubx(char \*, message_t \*, int)
+==============================================
+
+- Defined in :ref:`file_utils_parse_ubx_parse_ubx.c`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: parse_ubx(char *, message_t *, int)

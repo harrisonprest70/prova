@@ -1,0 +1,13 @@
+.. _exhale_function_parse__ubx_8h_1af625f85c126ffae2b9e9c6eabe9fd8a6:
+
+Function extract_message_GLL(const char \*)
+===========================================
+
+- Defined in :ref:`file_utils_parse_ubx_parse_ubx.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: extract_message_GLL(const char *)

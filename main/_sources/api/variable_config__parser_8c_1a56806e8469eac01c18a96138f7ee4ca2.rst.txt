@@ -1,0 +1,13 @@
+.. _exhale_variable_config__parser_8c_1a56806e8469eac01c18a96138f7ee4ca2:
+
+Variable json
+=============
+
+- Defined in :ref:`file_utils_config_parser_config_parser.c`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: json

@@ -1,0 +1,38 @@
+
+.. _program_listing_file_utils_config_parser_config_parser.h:
+
+Program Listing for File config_parser.h
+========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_utils_config_parser_config_parser.h>` (``utils/config_parser/config_parser.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #ifndef CONFIG_PARSER_H_
+   #define CONFIG_PARSER_H_
+   
+   #include <stdlib.h>
+   #include <stdio.h>
+   #include <unistd.h>
+   #include <string.h>
+   #include<json-c/json.h>
+   
+   typedef enum {
+       CSV,
+       JSON
+   }parse_t;
+   
+   typedef struct{
+       parse_t type;           
+       char path[100][1024];   
+       int inputs_count;       
+       int limit_warning;      
+   }config_t;
+   
+   config_t parse_config();
+   
+   parse_t what_type(const char *t);
+   
+   #endif

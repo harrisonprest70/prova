@@ -1,0 +1,13 @@
+.. _exhale_function_validate__config_8h_1a767c8ce351e4b05516ce3de987fc2935:
+
+Function schema_load(const char \*, void \*, const char \*, const int)
+======================================================================
+
+- Defined in :ref:`file_utils_validate_config_validate_config.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: schema_load(const char *, void *, const char *, const int)

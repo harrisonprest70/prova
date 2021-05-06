@@ -1,0 +1,13 @@
+.. _exhale_variable_config__parser_8c_1ac3ece2af903022a7070ff5d095ed5397:
+
+Variable csv
+============
+
+- Defined in :ref:`file_utils_config_parser_config_parser.c`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: csv

@@ -1,0 +1,13 @@
+.. _exhale_enum_parse__ubx_8h_1ae64c9a8278154dfb91652fbb4611542d:
+
+Enum message_name_t
+===================
+
+- Defined in :ref:`file_utils_parse_ubx_parse_ubx.h`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: message_name_t

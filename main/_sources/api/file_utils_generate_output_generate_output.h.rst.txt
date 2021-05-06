@@ -1,0 +1,70 @@
+
+.. _file_utils_generate_output_generate_output.h:
+
+File generate_output.h
+======================
+
+|exhale_lsh| :ref:`Parent directory <dir_utils_generate_output>` (``utils/generate_output``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``utils/generate_output/generate_output.h``)
+--------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_utils_generate_output_generate_output.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../config_parser/config_parser.h``
+
+- ``../parse_ubx/parse_ubx.h``
+
+- ``stdio.h``
+
+- ``stdlib.h``
+
+- ``string.h``
+
+- ``unistd.h``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_utils_generate_output_generate_output.c`
+
+
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_generate__output_8h_1ab34a97beda34a96fc173a4d228f6f5de`
+
+- :ref:`exhale_function_generate__output_8h_1a7bf1efeab3c8e9d471c96b0b482ea9d7`
+
+- :ref:`exhale_function_generate__output_8h_1a4f227bbc281f9fdc7a8e24df55a33df2`
+
+- :ref:`exhale_function_generate__output_8h_1a65d1da440086c283361fcfd6c7db1438`
+
+- :ref:`exhale_function_generate__output_8h_1a4d18ee898a4952e8d7d6b906326976ae`
+
+- :ref:`exhale_function_generate__output_8h_1aba3d7f062c4f191de970b986fdebd3be`
+

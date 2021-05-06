@@ -1,0 +1,332 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Program Listing for File validate_config.c &mdash; Eagletrt Project 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script type="text/javascript" src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Eagletrt Project
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">main</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Eagletrt Project</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Program Listing for File validate_config.c</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/api/program_listing_file_utils_validate_config_validate_config.c.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="program-listing-for-file-validate-config-c">
+<span id="program-listing-file-utils-validate-config-validate-config-c"></span><h1>Program Listing for File validate_config.c<a class="headerlink" href="#program-listing-for-file-validate-config-c" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_utils_validate_config_validate_config.c.html#file-utils-validate-config-validate-config-c"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">utils/validate_config/validate_config.c</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;stdlib.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;unistd.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;string.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="cpf">&lt;json-c/json.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;wjelement.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;wjreader.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;validate_config.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;../log_utils/log_utils.h&quot;</span><span class="cp"></span>
+
+<span class="k">static</span> <span class="n">WJElement</span> <span class="nf">schema_load</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">name</span><span class="p">,</span> <span class="kt">void</span> <span class="o">*</span><span class="n">client</span><span class="p">,</span>
+                             <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">file</span><span class="p">,</span> <span class="k">const</span> <span class="kt">int</span> <span class="n">line</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">char</span> <span class="o">*</span><span class="n">format</span><span class="p">;</span>
+    <span class="kt">char</span> <span class="o">*</span><span class="n">path</span><span class="p">;</span>
+    <span class="kt">FILE</span> <span class="o">*</span><span class="n">schemafile</span><span class="p">;</span>
+    <span class="n">WJReader</span> <span class="n">readschema</span><span class="p">;</span>
+    <span class="n">WJElement</span> <span class="n">schema</span><span class="p">;</span>
+
+    <span class="n">schema</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">client</span> <span class="o">&amp;&amp;</span> <span class="n">name</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">format</span> <span class="o">=</span> <span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="p">)</span><span class="n">client</span><span class="p">;</span>
+        <span class="n">path</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="n">strlen</span><span class="p">(</span><span class="n">format</span><span class="p">)</span> <span class="o">+</span> <span class="n">strlen</span><span class="p">(</span><span class="n">name</span><span class="p">));</span>
+        <span class="n">sprintf</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">format</span><span class="p">,</span> <span class="n">name</span><span class="p">);</span>
+
+        <span class="k">if</span> <span class="p">((</span><span class="n">schemafile</span> <span class="o">=</span> <span class="n">fopen</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="s">&quot;r&quot;</span><span class="p">)))</span> <span class="p">{</span>
+            <span class="k">if</span><span class="p">((</span><span class="n">readschema</span> <span class="o">=</span> <span class="n">WJROpenFILEDocument</span><span class="p">(</span><span class="n">schemafile</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="mi">0</span><span class="p">)))</span> <span class="p">{</span>
+                <span class="n">schema</span> <span class="o">=</span> <span class="n">WJEOpenDocument</span><span class="p">(</span><span class="n">readschema</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span> <span class="s">&quot;json document failed to open: &#39;%s&#39;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">path</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="n">fclose</span><span class="p">(</span><span class="n">schemafile</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span> <span class="s">&quot;json file not found: &#39;%s&#39;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">path</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="n">free</span><span class="p">(</span><span class="n">path</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="n">WJEDump</span><span class="p">(</span><span class="n">schema</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">schema</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="cm">/*</span>
+<span class="cm">  callback: cleanup/free open schema</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">schema_free</span><span class="p">(</span><span class="n">WJElement</span> <span class="n">schema</span><span class="p">,</span> <span class="kt">void</span> <span class="o">*</span><span class="n">client</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">WJECloseDocument</span><span class="p">(</span><span class="n">schema</span><span class="p">);</span>
+    <span class="k">return</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="cm">/*</span>
+<span class="cm">  callback: plop validation errors to stderr</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">schema_error</span><span class="p">(</span><span class="kt">void</span> <span class="o">*</span><span class="n">client</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">format</span><span class="p">,</span> <span class="p">...)</span> <span class="p">{</span>
+    <span class="kt">va_list</span> <span class="n">ap</span><span class="p">;</span>
+    <span class="n">va_start</span><span class="p">(</span><span class="n">ap</span><span class="p">,</span> <span class="n">format</span><span class="p">);</span>
+    <span class="n">vfprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span> <span class="n">format</span><span class="p">,</span> <span class="n">ap</span><span class="p">);</span>
+    <span class="n">va_end</span><span class="p">(</span><span class="n">ap</span><span class="p">);</span>
+    <span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span> <span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+
+
+<span class="kt">int</span> <span class="nf">validateConfig</span><span class="p">(){</span>
+    <span class="kt">FILE</span> <span class="o">*</span><span class="n">jsonfile</span><span class="p">;</span>
+    <span class="kt">FILE</span> <span class="o">*</span><span class="n">schemafile</span><span class="p">;</span>
+    <span class="n">WJReader</span> <span class="n">readjson</span><span class="p">;</span>
+    <span class="n">WJReader</span> <span class="n">readschema</span><span class="p">;</span>
+    <span class="n">WJElement</span> <span class="n">json</span><span class="p">;</span>
+    <span class="n">WJElement</span> <span class="n">schema</span><span class="p">;</span>
+    <span class="kt">char</span> <span class="o">*</span><span class="n">format</span><span class="p">;</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">jsonfile</span> <span class="o">=</span> <span class="n">fopen</span><span class="p">(</span><span class="s">&quot;config.json&quot;</span><span class="p">,</span> <span class="s">&quot;r&quot;</span><span class="p">)))</span> <span class="p">{</span>
+        <span class="n">logError</span><span class="p">(</span><span class="s">&quot;json file not found&quot;</span><span class="p">);</span>
+        <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">schemafile</span> <span class="o">=</span> <span class="n">fopen</span><span class="p">(</span><span class="s">&quot;config.schema&quot;</span><span class="p">,</span> <span class="s">&quot;r&quot;</span><span class="p">)))</span> <span class="p">{</span>
+        <span class="n">logError</span><span class="p">(</span><span class="s">&quot;schema file not found&quot;</span><span class="p">);</span>
+        <span class="k">return</span> <span class="mi">2</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">readjson</span> <span class="o">=</span> <span class="n">WJROpenFILEDocument</span><span class="p">(</span><span class="n">jsonfile</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span> <span class="o">||</span>
+       <span class="o">!</span><span class="p">(</span><span class="n">json</span> <span class="o">=</span> <span class="n">WJEOpenDocument</span><span class="p">(</span><span class="n">readjson</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">)))</span> <span class="p">{</span>
+        <span class="n">logError</span><span class="p">(</span><span class="s">&quot;json could not be read.</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+        <span class="k">return</span> <span class="mi">3</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">readschema</span> <span class="o">=</span> <span class="n">WJROpenFILEDocument</span><span class="p">(</span><span class="n">schemafile</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span> <span class="o">||</span>
+       <span class="o">!</span><span class="p">(</span><span class="n">schema</span> <span class="o">=</span> <span class="n">WJEOpenDocument</span><span class="p">(</span><span class="n">readschema</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">)))</span> <span class="p">{</span>
+        <span class="n">logError</span><span class="p">(</span><span class="s">&quot;schema could not be read.</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+        <span class="n">WJECloseDocument</span><span class="p">(</span><span class="n">json</span><span class="p">);</span>
+        <span class="k">return</span> <span class="mi">4</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">//WJEDump(json);</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">readjson</span><span class="o">-&gt;</span><span class="n">depth</span><span class="o">==</span><span class="mi">0</span><span class="p">){</span>
+        <span class="n">logSuccess</span><span class="p">(</span><span class="s">&quot;json: PASS&quot;</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span><span class="p">{</span>
+        <span class="n">logError</span><span class="p">(</span><span class="s">&quot;json: FAIL&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="c1">//WJEDump(schema);</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">readschema</span><span class="o">-&gt;</span><span class="n">depth</span><span class="o">==</span><span class="mi">0</span><span class="p">){</span>
+        <span class="n">logSuccess</span><span class="p">(</span><span class="s">&quot;schema: PASS&quot;</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="n">logError</span><span class="p">(</span><span class="s">&quot;schema: FAIL&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">if</span><span class="p">((</span><span class="n">WJESchemaValidate</span><span class="p">(</span><span class="n">schema</span><span class="p">,</span> <span class="n">json</span><span class="p">,</span> <span class="n">schema_error</span><span class="p">,</span> <span class="n">schema_load</span><span class="p">,</span> <span class="n">schema_free</span><span class="p">,</span>
+                         <span class="n">format</span><span class="p">))</span><span class="o">&amp;&amp;</span><span class="p">(</span><span class="n">readjson</span><span class="o">-&gt;</span><span class="n">depth</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span><span class="o">&amp;&amp;</span><span class="p">(</span><span class="n">readschema</span><span class="o">-&gt;</span><span class="n">depth</span><span class="o">==</span><span class="mi">0</span><span class="p">))</span> <span class="p">{</span>
+        <span class="n">logSuccess</span><span class="p">(</span><span class="s">&quot;validation: PASS&quot;</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="n">logError</span><span class="p">(</span><span class="s">&quot;validation: FAIL&quot;</span><span class="p">);</span>
+        <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">WJECloseDocument</span><span class="p">(</span><span class="n">json</span><span class="p">);</span>
+    <span class="n">WJECloseDocument</span><span class="p">(</span><span class="n">schema</span><span class="p">);</span>
+    <span class="n">WJRCloseDocument</span><span class="p">(</span><span class="n">readjson</span><span class="p">);</span>
+    <span class="n">WJRCloseDocument</span><span class="p">(</span><span class="n">readschema</span><span class="p">);</span>
+    <span class="n">fclose</span><span class="p">(</span><span class="n">jsonfile</span><span class="p">);</span>
+    <span class="n">fclose</span><span class="p">(</span><span class="n">schemafile</span><span class="p">);</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Eagletrt.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
