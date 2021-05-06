@@ -1,0 +1,13 @@
+.. _exhale_function_generate__output_8h_1a65d1da440086c283361fcfd6c7db1438:
+
+Function matchtype(const char \*, parse_t)
+==========================================
+
+- Defined in :ref:`file_utils_generate_output_generate_output.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: matchtype(const char *, parse_t)

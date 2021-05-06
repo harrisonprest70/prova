@@ -1,0 +1,13 @@
+.. _exhale_function_parse__ubx_8h_1ae4586b814c5e5d53cb6257b745d6dcbb:
+
+Function matchubx(const char \*)
+================================
+
+- Defined in :ref:`file_utils_parse_ubx_parse_ubx.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: matchubx(const char *)

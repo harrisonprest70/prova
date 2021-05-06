@@ -1,0 +1,21 @@
+.. _dir_utils_generate_output:
+
+
+Directory output
+================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_utils>` (``utils``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``utils/generate_output``
+
+
+Files
+-----
+
+- :ref:`file_utils_generate_output_generate_output.c`
+- :ref:`file_utils_generate_output_generate_output.h`
+
+

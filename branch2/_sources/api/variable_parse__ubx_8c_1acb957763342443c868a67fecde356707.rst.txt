@@ -1,0 +1,13 @@
+.. _exhale_variable_parse__ubx_8c_1acb957763342443c868a67fecde356707:
+
+Variable GNGGA
+==============
+
+- Defined in :ref:`file_utils_parse_ubx_parse_ubx.c`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: GNGGA

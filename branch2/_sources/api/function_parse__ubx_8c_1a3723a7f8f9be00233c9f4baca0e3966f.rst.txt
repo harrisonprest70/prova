@@ -1,0 +1,13 @@
+.. _exhale_function_parse__ubx_8c_1a3723a7f8f9be00233c9f4baca0e3966f:
+
+Function extract_message_GGA(const char \*)
+===========================================
+
+- Defined in :ref:`file_utils_parse_ubx_parse_ubx.c`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: extract_message_GGA(const char *)

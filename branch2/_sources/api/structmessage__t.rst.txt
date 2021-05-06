@@ -1,0 +1,16 @@
+.. _exhale_struct_structmessage__t:
+
+Struct message_t
+================
+
+- Defined in :ref:`file_utils_parse_ubx_parse_ubx.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: message_t
+   :members:
+   :protected-members:
+   :undoc-members:

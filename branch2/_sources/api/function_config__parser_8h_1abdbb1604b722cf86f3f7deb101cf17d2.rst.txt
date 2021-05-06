@@ -1,0 +1,13 @@
+.. _exhale_function_config__parser_8h_1abdbb1604b722cf86f3f7deb101cf17d2:
+
+Function what_type(const char \*)
+=================================
+
+- Defined in :ref:`file_utils_config_parser_config_parser.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: what_type(const char *)

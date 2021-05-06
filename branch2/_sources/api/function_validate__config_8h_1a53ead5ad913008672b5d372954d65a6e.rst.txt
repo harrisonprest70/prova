@@ -1,0 +1,13 @@
+.. _exhale_function_validate__config_8h_1a53ead5ad913008672b5d372954d65a6e:
+
+Function schema_error(void \*, const char \*, ...)
+==================================================
+
+- Defined in :ref:`file_utils_validate_config_validate_config.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: schema_error(void *, const char *, ...)

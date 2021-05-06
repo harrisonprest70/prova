@@ -1,0 +1,69 @@
+
+.. _file_utils_parse_ubx_parse_ubx.c:
+
+File parse_ubx.c
+================
+
+|exhale_lsh| :ref:`Parent directory <dir_utils_parse_ubx>` (``utils/parse_ubx``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``utils/parse_ubx/parse_ubx.c``)
+--------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_utils_parse_ubx_parse_ubx.c.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``parse_ubx.h`` (:ref:`file_utils_parse_ubx_parse_ubx.h`)
+
+
+
+
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_parse__ubx_8c_1a3723a7f8f9be00233c9f4baca0e3966f`
+
+- :ref:`exhale_function_parse__ubx_8c_1af625f85c126ffae2b9e9c6eabe9fd8a6`
+
+- :ref:`exhale_function_parse__ubx_8c_1ac9e112ef1244a3f821f9722294838515`
+
+- :ref:`exhale_function_parse__ubx_8c_1a2dbd6c667ca567babf5e6c22cfce6002`
+
+- :ref:`exhale_function_parse__ubx_8c_1ae4586b814c5e5d53cb6257b745d6dcbb`
+
+- :ref:`exhale_function_parse__ubx_8c_1a1ef7988daf0c825dcf15a885a2e6b018`
+
+- :ref:`exhale_function_parse__ubx_8c_1abb3dc48cad0c941e235a9868838a4e4c`
+
+- :ref:`exhale_function_parse__ubx_8c_1afc7ae3057f10830926911293fcf74e9b`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_parse__ubx_8c_1acb957763342443c868a67fecde356707`
+
+- :ref:`exhale_variable_parse__ubx_8c_1a85701dbb8706235fab142957a3cc39ee`
+
+- :ref:`exhale_variable_parse__ubx_8c_1a1ff3706312479d9a21cb264b13b954c7`
+
