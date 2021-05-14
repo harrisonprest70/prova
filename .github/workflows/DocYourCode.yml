@@ -1,6 +1,8 @@
 name: Documentation
-on: [push]
-
+on: 
+  push:
+    paths-ignore:
+          - .github/workflows/action.yml
 
 jobs:
   docs:
