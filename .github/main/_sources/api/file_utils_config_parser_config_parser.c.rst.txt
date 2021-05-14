@@ -1,0 +1,57 @@
+
+.. _file_utils_config_parser_config_parser.c:
+
+File config_parser.c
+====================
+
+|exhale_lsh| :ref:`Parent directory <dir_utils_config_parser>` (``utils/config_parser``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``utils/config_parser/config_parser.c``)
+----------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_utils_config_parser_config_parser.c.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``config_parser.h`` (:ref:`file_utils_config_parser_config_parser.h`)
+
+
+
+
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_config__parser_8c_1ade7f79475553e1353c229c4e5cdf7053`
+
+- :ref:`exhale_function_config__parser_8c_1abdbb1604b722cf86f3f7deb101cf17d2`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_config__parser_8c_1ac3ece2af903022a7070ff5d095ed5397`
+
+- :ref:`exhale_variable_config__parser_8c_1a56806e8469eac01c18a96138f7ee4ca2`
+
+- :ref:`exhale_variable_config__parser_8c_1a2c1d454f09b8078f090bfc25ecdd35c8`
+

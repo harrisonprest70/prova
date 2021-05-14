@@ -1,0 +1,13 @@
+.. _exhale_function_validate__config_8c_1af8a3025641fd6e0fcdc1e40f81bfe0a1:
+
+Function schema_free(WJElement, void \*)
+========================================
+
+- Defined in :ref:`file_utils_validate_config_validate_config.c`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: schema_free(WJElement, void *)

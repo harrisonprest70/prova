@@ -1,0 +1,13 @@
+.. _exhale_function_parse__ubx_8c_1a2dbd6c667ca567babf5e6c22cfce6002:
+
+Function get_line_message(char \*)
+==================================
+
+- Defined in :ref:`file_utils_parse_ubx_parse_ubx.c`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: get_line_message(char *)

@@ -1,0 +1,21 @@
+.. _dir_utils_validate_config:
+
+
+Directory config
+================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_utils>` (``utils``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``utils/validate_config``
+
+
+Files
+-----
+
+- :ref:`file_utils_validate_config_validate_config.c`
+- :ref:`file_utils_validate_config_validate_config.h`
+
+
