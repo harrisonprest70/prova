@@ -1,0 +1,13 @@
+.. _exhale_function_validate__config_8h_1afb0d9b195110a0efc9e1fdad179fc175:
+
+Function validateConfig()
+=========================
+
+- Defined in :ref:`file_utils_validate_config_validate_config.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: validateConfig()

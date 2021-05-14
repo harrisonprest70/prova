@@ -1,0 +1,13 @@
+.. _exhale_variable_config__parser_8c_1a2c1d454f09b8078f090bfc25ecdd35c8:
+
+Variable no_file
+================
+
+- Defined in :ref:`file_utils_config_parser_config_parser.c`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: no_file

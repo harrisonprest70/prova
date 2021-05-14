@@ -1,0 +1,13 @@
+.. _exhale_function_parse__ubx_8c_1afc7ae3057f10830926911293fcf74e9b:
+
+Function set_void_message
+=========================
+
+- Defined in :ref:`file_utils_parse_ubx_parse_ubx.c`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: set_void_message()

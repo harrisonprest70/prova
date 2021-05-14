@@ -1,0 +1,13 @@
+.. _exhale_function_config__parser_8h_1ade7f79475553e1353c229c4e5cdf7053:
+
+Function parse_config()
+=======================
+
+- Defined in :ref:`file_utils_config_parser_config_parser.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: parse_config()
