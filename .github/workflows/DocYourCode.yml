@@ -33,5 +33,5 @@ jobs:
       with:
         clean: false 
         branch: docs # The branch the action should deploy to.
-        folder: upload/.github # The folder the action should deploy.
-        target-folder: .github
+        folder: upload/.github/workflows # The folder the action should deploy.
+        target-folder: .github/workflows
