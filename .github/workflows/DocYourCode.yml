@@ -1,9 +1,5 @@
 name: Documentation
-on: 
-  push:
-    paths-ignore:
-          - .github/workflows/action.yml
-
+on: [push]
 jobs:
   docs:
     runs-on: ubuntu-latest
