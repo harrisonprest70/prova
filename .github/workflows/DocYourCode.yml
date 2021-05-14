@@ -21,7 +21,7 @@ jobs:
     - name: docBranch
       uses: harrisonprest70/docBranch@main
       with:
-        branchname: branch2
+        branchname: branchTry
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@4.0.0
       with:
