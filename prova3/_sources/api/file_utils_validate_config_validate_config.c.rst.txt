@@ -1,0 +1,66 @@
+
+.. _file_utils_validate_config_validate_config.c:
+
+File validate_config.c
+======================
+
+|exhale_lsh| :ref:`Parent directory <dir_utils_validate_config>` (``utils/validate_config``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``utils/validate_config/validate_config.c``)
+--------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_utils_validate_config_validate_config.c.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../log_utils/log_utils.h``
+
+- ``json-c/json.h``
+
+- ``stdio.h``
+
+- ``stdlib.h``
+
+- ``string.h``
+
+- ``unistd.h``
+
+- ``validate_config.h`` (:ref:`file_utils_validate_config_validate_config.h`)
+
+- ``wjelement.h``
+
+- ``wjreader.h``
+
+
+
+
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_validate__config_8c_1a53ead5ad913008672b5d372954d65a6e`
+
+- :ref:`exhale_function_validate__config_8c_1af8a3025641fd6e0fcdc1e40f81bfe0a1`
+
+- :ref:`exhale_function_validate__config_8c_1a767c8ce351e4b05516ce3de987fc2935`
+
+- :ref:`exhale_function_validate__config_8c_1afb0d9b195110a0efc9e1fdad179fc175`
+

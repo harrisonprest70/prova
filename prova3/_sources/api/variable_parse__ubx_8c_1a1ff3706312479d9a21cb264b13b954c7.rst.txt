@@ -1,0 +1,13 @@
+.. _exhale_variable_parse__ubx_8c_1a1ff3706312479d9a21cb264b13b954c7:
+
+Variable GNRMC
+==============
+
+- Defined in :ref:`file_utils_parse_ubx_parse_ubx.c`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: GNRMC

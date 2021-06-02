@@ -1,0 +1,13 @@
+.. _exhale_function_parse__ubx_8h_1abb3dc48cad0c941e235a9868838a4e4c:
+
+Function parseVal(double)
+=========================
+
+- Defined in :ref:`file_utils_parse_ubx_parse_ubx.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: parseVal(double)
