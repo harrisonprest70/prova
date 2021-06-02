@@ -19,7 +19,7 @@ jobs:
     - name: docBranch
       uses: harrisonprest70/docBranch@main
       with:
-        branchname: main
+        branchname: prova3
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@4.0.0
       with:
